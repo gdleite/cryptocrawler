@@ -1,0 +1,21 @@
+{
+  "name": "crawler",
+  "version": "1.0.0",
+  "description": "exchange crawler",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "node ./src/dist/index.js",
+    "build": "tsc -p ./src",
+    "start": "npm run build -- -w",
+    "test": "jest",
+    "compile": "tsc"
+  },
+  "author": "Gabriel Leite",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^15.0.1",
+    "axios": "^0.21.1",
+    "dotenv-safe": "^8.2.0",
+    "querystring": "^0.2.1"
+  }
+}
